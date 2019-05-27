@@ -1,0 +1,18 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org" th:fragment="add">
+    <div class="row">
+        <div class="col-12-md">
+            <form th:action="@{/add}" th:object="${planet}" method="post" action="/add">
+
+                <input type="text" name="planetName" placeholder="planetName">
+                <input type="number" name="distanceFromSun" placeholder="distanceFromSun">
+                <input type="number" step="0.0001" name="oneWayLightTimeToTheSun" placeholder="oneWayLightTimeToTheSun">
+                <input type="number" name="lengthOfYear" placeholder="lengthOfYear">
+                <textarea rows="4" cols="30" name="planetInfo" placeholder="planetInfo"></textarea>
+                <input type="text" name="planetType" placeholder="planetType">
+                <input type="text" name="planetImage" placeholder="planetImage">
+
+                <button type="submit" class="btn btn-sm btn-success">create</button>
+            </form>
+        </div>
+    </div>
+</div>

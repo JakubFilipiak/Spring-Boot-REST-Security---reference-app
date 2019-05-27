@@ -1,0 +1,19 @@
+.masterhead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://cdn-images-1.medium.com/max/2600/1*QS59aHuIEgJoIogixOJ32w.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    color: white;
+    font-size: 20px;
+}
+
+.content-header {
+    font-family: 'Oleo Script', cursive;
+    color: white;
+    font-size: 30px;
+}

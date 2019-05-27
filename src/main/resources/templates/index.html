@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: head"></head>
+<body class="masterhead">
+<div class="container">
+    <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+            <h3 class="font-weight-light content">
+                Welcome to simple Cosmic Project App.
+                <span class="content-header">Enjoy!</span>
+            </h3>
+            <p th:text="${message}" style="color: white"></p>
+            <a href="/planets"><p>Solar system admin panel</p></a>
+            <br>
+            <a href="/logout"><p>logout</p></a>
+            <br>
+            <a href="/excel"><p>create file</p></a>
+        </div>
+    </div>
+    <div class="row">
+        <div th:replace="fragments/overview :: planets"></div>
+    </div>
+</div>
+</body>
+</html>
